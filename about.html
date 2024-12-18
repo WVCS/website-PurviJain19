@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <br>
+  <br>
+  <title>About Me</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="about-container">
+    <h1 class="about-title">About Me</h1>
+    
+    <div class="about-content">
+      <p class="about-description">
+        Hey there! I'm <strong>Purvi Jain</strong>, a passionate learner and enthusiast of all things tech and design! I love coding, creating, and experimenting with new ideas. When I'm not immersed in a coding project, you can find me exploring new trends in design, catching up with friends, or getting lost in a good movie.
+      </p>
+
+      <p class="about-description">
+        Fun fact: I might be a coding wizard, but I also love indulging in art, fashion, and aesthetic design. They say a creative mind never sleeps... and trust me, neither do I! 🤓
+      </p>
+
+      <p class="about-description">
+        Here's a glimpse into some of my passions and skills:
+        <ul>
+          <li>💻 Coding - Java, Python, and all the techy stuff!</li>
+          <li>🎨 Design - From vibrant color schemes to playful patterns and painting them</li>
+          <li>🌱 Learning - Always striving to grow and evolve</li>
+        </ul>
+      </p>
+    </div>
+  <br>
+      <div class="navbar">
+      <a href="index.html">Home</a>
+      <a href="projects.html">My Projects</a>
+      <a href="future.html">Future Aspirations</a>
+      <a href="about.html">About Me</a>
+    </div>
+  </div>
+</body>
+</html>
+--------------------------------------------
+body {
+  background-image: linear-gradient(135deg, #e6a7a0, #f0d3b4, #f7e6b2);
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #4a3f35;
+  text-align: center;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  height: 100vh;
+}
+
+.about-title {
+  color: #aa6f73;
+  font-size: 70px;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 2px 2px 6px #f9d7b1;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 15px 30px;
+  border-radius: 25px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-title:hover {
+  color: #d6a67f;
+  transform: scale(1.05);
+}
+
+.about-content {
+  max-width: 800px;
+  margin-top: 30px;
+  line-height: 1.8;
+}
+
+.about-description {
+  font-size: 20px;
+  color: #6d4b3b;
+  font-weight: 400;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  font-size: 18px;
+  color: #6d4b3b;
+  margin-bottom: 10px;
+}
+
+.about-btn {
+  padding: 15px 30px;
+  background: linear-gradient(145deg, #f6e0b5, #eea990);
+  color: #4a3f35;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  margin-top: 30px;
+}
+
+.about-btn:hover {
+  background: linear-gradient(145deg, #aa6f73, #f67280);
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 6px 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("https://i.pinimg.com/originals/ab/5a/d6/ab5ad6222c7c979e9c0111a716e8a6d4.png") repeat;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 25px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  width: fit-content;
+}
+
+.nav-btn {
+  text-decoration: none;
+  padding: 12px 20px;
+  font-size: 18px;
+  color: #66545e;
+  font-weight: bold;
+  background: linear-gradient(145deg, #eea990, #f6e0b5);
+  border: 2px solid #a39193;
+  border-radius: 30px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-btn:hover {
+  background: linear-gradient(145deg, #aa6f73, #eea990);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  border-color: #66545e;
+}
